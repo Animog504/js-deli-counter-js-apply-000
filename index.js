@@ -1,10 +1,14 @@
 //===================================================================
 //                          TAKE A NUMBER                           =
 //===================================================================
+var lineCounter = 0;
+
 function takeANumber(line,customerName)
 {
-  line.push(customerName)
-  return "Welcome, " + customerName + ". You are number " + line.length + " in line.";
+  lineCounter++;
+  line.push(lineCounter)
+  return "Welcome, " + customerName + ". You are number " + lineCounter + " in line.";
+  
 }//takeANumber() end
 //===================================================================
 //                           NOW SERVING                            =
